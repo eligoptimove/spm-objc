@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MatomoTracker",
+        "repositoryURL": "https://github.com/matomo-org/matomo-sdk-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "39a2c967254aea2579d234538b81444bdaed10dc",
+          "version": "7.2.0"
+        }
+      },
+      {
+        "package": "Mocker",
+        "repositoryURL": "https://github.com/WeTransfer/Mocker.git",
+        "state": {
+          "branch": null,
+          "revision": "c7cc3c9a4c086dc952bef6a1a16b60e1e2820f1b",
+          "version": "2.1.0"
+        }
+      },
+      {
+        "package": "Optimove",
+        "repositoryURL": "https://github.com/optimove-tech/Optimove-SDK-iOS.git",
+        "state": {
+          "branch": null,
+          "revision": "50bee66bdb11a2fb12cc4702214176f708c8f0c2",
+          "version": "2.12.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		460C22532474050E00337918 /* OptimoveNotificationServiceExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 460C22522474050E00337918 /* OptimoveNotificationServiceExtension */; };
+		460C22552474050E00337918 /* OptimoveNotificationServiceExtension in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 460C22522474050E00337918 /* OptimoveNotificationServiceExtension */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		460C22572474052100337918 /* OptimoveNotificationServiceExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 460C22562474052100337918 /* OptimoveNotificationServiceExtension */; settings = {ATTRIBUTES = (Weak, ); }; };
+		460C22582474052100337918 /* OptimoveNotificationServiceExtension in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 460C22562474052100337918 /* OptimoveNotificationServiceExtension */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		46699C162473FDAC00A072DF /* OptimoveSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 46699C152473FDAC00A072DF /* OptimoveSDK */; };
+		4699D0FC2472AE2A00E9A454 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4699D0FB2472AE2A00E9A454 /* AppDelegate.m */; };
+		4699D0FF2472AE2A00E9A454 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4699D0FE2472AE2A00E9A454 /* SceneDelegate.m */; };
+		4699D1022472AE2A00E9A454 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4699D1012472AE2A00E9A454 /* ViewController.m */; };
+		4699D1052472AE2A00E9A454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4699D1032472AE2A00E9A454 /* Main.storyboard */; };
+		4699D1072472AE2C00E9A454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4699D1062472AE2C00E9A454 /* Assets.xcassets */; };
+		4699D10A2472AE2C00E9A454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4699D1082472AE2C00E9A454 /* LaunchScreen.storyboard */; };
+		4699D10D2472AE2C00E9A454 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4699D10C2472AE2C00E9A454 /* main.m */; };
+		4699D11F2472AF3B00E9A454 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4699D11E2472AF3B00E9A454 /* Service.swift */; };
+		469A250D2473F54F004FB3AE /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 469A250C2473F54F004FB3AE /* NotificationService.m */; };
+		469A25112473F54F004FB3AE /* OptimoveSPMObjCNSE.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 469A25092473F54F004FB3AE /* OptimoveSPMObjCNSE.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		469A250F2473F54F004FB3AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4699D0EF2472AE2A00E9A454 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 469A25082473F54F004FB3AE;
+			remoteInfo = OptimoveSPMObjCNSE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		460C22542474050E00337918 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				460C22552474050E00337918 /* OptimoveNotificationServiceExtension in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		460C22592474052100337918 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = ../../Frameworks;
+			dstSubfolderSpec = 6;
+			files = (
+				460C22582474052100337918 /* OptimoveNotificationServiceExtension in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469A25122473F54F004FB3AE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				469A25112473F54F004FB3AE /* OptimoveSPMObjCNSE.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4699D0F72472AE2A00E9A454 /* OptimoveSPMObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OptimoveSPMObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4699D0FA2472AE2A00E9A454 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4699D0FB2472AE2A00E9A454 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4699D0FD2472AE2A00E9A454 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		4699D0FE2472AE2A00E9A454 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		4699D1002472AE2A00E9A454 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4699D1012472AE2A00E9A454 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4699D1042472AE2A00E9A454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4699D1062472AE2C00E9A454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4699D1092472AE2C00E9A454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4699D10B2472AE2C00E9A454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4699D10C2472AE2C00E9A454 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4699D11D2472AF3B00E9A454 /* OptimoveSPMObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OptimoveSPMObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		4699D11E2472AF3B00E9A454 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		469A25092473F54F004FB3AE /* OptimoveSPMObjCNSE.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OptimoveSPMObjCNSE.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		469A250B2473F54F004FB3AE /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		469A250C2473F54F004FB3AE /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		469A250E2473F54F004FB3AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4699D0F42472AE2A00E9A454 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460C22532474050E00337918 /* OptimoveNotificationServiceExtension in Frameworks */,
+				46699C162473FDAC00A072DF /* OptimoveSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469A25062473F54F004FB3AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460C22572474052100337918 /* OptimoveNotificationServiceExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4699D0EE2472AE2A00E9A454 = {
+			isa = PBXGroup;
+			children = (
+				4699D0F92472AE2A00E9A454 /* OptimoveSPMObjC */,
+				469A250A2473F54F004FB3AE /* OptimoveSPMObjCNSE */,
+				4699D0F82472AE2A00E9A454 /* Products */,
+				469A25162473F580004FB3AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4699D0F82472AE2A00E9A454 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4699D0F72472AE2A00E9A454 /* OptimoveSPMObjC.app */,
+				469A25092473F54F004FB3AE /* OptimoveSPMObjCNSE.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4699D0F92472AE2A00E9A454 /* OptimoveSPMObjC */ = {
+			isa = PBXGroup;
+			children = (
+				4699D0FA2472AE2A00E9A454 /* AppDelegate.h */,
+				4699D0FB2472AE2A00E9A454 /* AppDelegate.m */,
+				4699D0FD2472AE2A00E9A454 /* SceneDelegate.h */,
+				4699D0FE2472AE2A00E9A454 /* SceneDelegate.m */,
+				4699D11E2472AF3B00E9A454 /* Service.swift */,
+				4699D1002472AE2A00E9A454 /* ViewController.h */,
+				4699D1012472AE2A00E9A454 /* ViewController.m */,
+				4699D1032472AE2A00E9A454 /* Main.storyboard */,
+				4699D1062472AE2C00E9A454 /* Assets.xcassets */,
+				4699D1082472AE2C00E9A454 /* LaunchScreen.storyboard */,
+				4699D10B2472AE2C00E9A454 /* Info.plist */,
+				4699D10C2472AE2C00E9A454 /* main.m */,
+				4699D11D2472AF3B00E9A454 /* OptimoveSPMObjC-Bridging-Header.h */,
+			);
+			path = OptimoveSPMObjC;
+			sourceTree = "<group>";
+		};
+		469A250A2473F54F004FB3AE /* OptimoveSPMObjCNSE */ = {
+			isa = PBXGroup;
+			children = (
+				469A250B2473F54F004FB3AE /* NotificationService.h */,
+				469A250C2473F54F004FB3AE /* NotificationService.m */,
+				469A250E2473F54F004FB3AE /* Info.plist */,
+			);
+			path = OptimoveSPMObjCNSE;
+			sourceTree = "<group>";
+		};
+		469A25162473F580004FB3AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4699D0F62472AE2A00E9A454 /* OptimoveSPMObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4699D1102472AE2C00E9A454 /* Build configuration list for PBXNativeTarget "OptimoveSPMObjC" */;
+			buildPhases = (
+				4699D0F32472AE2A00E9A454 /* Sources */,
+				4699D0F42472AE2A00E9A454 /* Frameworks */,
+				4699D0F52472AE2A00E9A454 /* Resources */,
+				469A25122473F54F004FB3AE /* Embed App Extensions */,
+				460C22542474050E00337918 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				469A25102473F54F004FB3AE /* PBXTargetDependency */,
+			);
+			name = OptimoveSPMObjC;
+			packageProductDependencies = (
+				46699C152473FDAC00A072DF /* OptimoveSDK */,
+				460C22522474050E00337918 /* OptimoveNotificationServiceExtension */,
+			);
+			productName = OptimoveSPMObjC;
+			productReference = 4699D0F72472AE2A00E9A454 /* OptimoveSPMObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		469A25082473F54F004FB3AE /* OptimoveSPMObjCNSE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 469A25152473F54F004FB3AE /* Build configuration list for PBXNativeTarget "OptimoveSPMObjCNSE" */;
+			buildPhases = (
+				469A25052473F54F004FB3AE /* Sources */,
+				469A25062473F54F004FB3AE /* Frameworks */,
+				469A25072473F54F004FB3AE /* Resources */,
+				460C22592474052100337918 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OptimoveSPMObjCNSE;
+			packageProductDependencies = (
+				460C22562474052100337918 /* OptimoveNotificationServiceExtension */,
+			);
+			productName = OptimoveSPMObjCNSE;
+			productReference = 469A25092473F54F004FB3AE /* OptimoveSPMObjCNSE.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4699D0EF2472AE2A00E9A454 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Optimove;
+				TargetAttributes = {
+					4699D0F62472AE2A00E9A454 = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
+					};
+					469A25082473F54F004FB3AE = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 4699D0F22472AE2A00E9A454 /* Build configuration list for PBXProject "OptimoveSPMObjC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4699D0EE2472AE2A00E9A454;
+			packageReferences = (
+				4699D1132472AE6A00E9A454 /* XCRemoteSwiftPackageReference "Optimove-SDK-iOS" */,
+			);
+			productRefGroup = 4699D0F82472AE2A00E9A454 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4699D0F62472AE2A00E9A454 /* OptimoveSPMObjC */,
+				469A25082473F54F004FB3AE /* OptimoveSPMObjCNSE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4699D0F52472AE2A00E9A454 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4699D10A2472AE2C00E9A454 /* LaunchScreen.storyboard in Resources */,
+				4699D1072472AE2C00E9A454 /* Assets.xcassets in Resources */,
+				4699D1052472AE2A00E9A454 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469A25072473F54F004FB3AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4699D0F32472AE2A00E9A454 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4699D1022472AE2A00E9A454 /* ViewController.m in Sources */,
+				4699D0FC2472AE2A00E9A454 /* AppDelegate.m in Sources */,
+				4699D11F2472AF3B00E9A454 /* Service.swift in Sources */,
+				4699D10D2472AE2C00E9A454 /* main.m in Sources */,
+				4699D0FF2472AE2A00E9A454 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469A25052473F54F004FB3AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469A250D2473F54F004FB3AE /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		469A25102473F54F004FB3AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 469A25082473F54F004FB3AE /* OptimoveSPMObjCNSE */;
+			targetProxy = 469A250F2473F54F004FB3AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4699D1032472AE2A00E9A454 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4699D1042472AE2A00E9A454 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4699D1082472AE2C00E9A454 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4699D1092472AE2C00E9A454 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4699D10E2472AE2C00E9A454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4699D10F2472AE2C00E9A454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4699D1112472AE2C00E9A454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LDTF4M4FTC;
+				INFOPLIST_FILE = OptimoveSPMObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.optimove.sdk.optimovemobileclientnofirebase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.optimove.sdk.optimovemobileclientnofirebase 1579626690";
+				SWIFT_OBJC_BRIDGING_HEADER = "OptimoveSPMObjC/OptimoveSPMObjC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4699D1122472AE2C00E9A454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LDTF4M4FTC;
+				INFOPLIST_FILE = OptimoveSPMObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.optimove.sdk.optimovemobileclientnofirebase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.optimove.sdk.optimovemobileclientnofirebase 1579626690";
+				SWIFT_OBJC_BRIDGING_HEADER = "OptimoveSPMObjC/OptimoveSPMObjC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		469A25132473F54F004FB3AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LDTF4M4FTC;
+				INFOPLIST_FILE = OptimoveSPMObjCNSE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.optimove.sdk.optimovemobileclientnofirebase.Notification-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.optimove.sdk.optimovemobileclientnofirebase.Notification-Extension 1579626704";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		469A25142473F54F004FB3AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LDTF4M4FTC;
+				INFOPLIST_FILE = OptimoveSPMObjCNSE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.optimove.sdk.optimovemobileclientnofirebase.Notification-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.optimove.sdk.optimovemobileclientnofirebase.Notification-Extension 1579626704";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4699D0F22472AE2A00E9A454 /* Build configuration list for PBXProject "OptimoveSPMObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4699D10E2472AE2C00E9A454 /* Debug */,
+				4699D10F2472AE2C00E9A454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4699D1102472AE2C00E9A454 /* Build configuration list for PBXNativeTarget "OptimoveSPMObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4699D1112472AE2C00E9A454 /* Debug */,
+				4699D1122472AE2C00E9A454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		469A25152473F54F004FB3AE /* Build configuration list for PBXNativeTarget "OptimoveSPMObjCNSE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				469A25132473F54F004FB3AE /* Debug */,
+				469A25142473F54F004FB3AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4699D1132472AE6A00E9A454 /* XCRemoteSwiftPackageReference "Optimove-SDK-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/optimove-tech/Optimove-SDK-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.12.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		460C22522474050E00337918 /* OptimoveNotificationServiceExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4699D1132472AE6A00E9A454 /* XCRemoteSwiftPackageReference "Optimove-SDK-iOS" */;
+			productName = OptimoveNotificationServiceExtension;
+		};
+		460C22562474052100337918 /* OptimoveNotificationServiceExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4699D1132472AE6A00E9A454 /* XCRemoteSwiftPackageReference "Optimove-SDK-iOS" */;
+			productName = OptimoveNotificationServiceExtension;
+		};
+		46699C152473FDAC00A072DF /* OptimoveSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4699D1132472AE6A00E9A454 /* XCRemoteSwiftPackageReference "Optimove-SDK-iOS" */;
+			productName = OptimoveSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4699D0EF2472AE2A00E9A454 /* Project object */;
+}
